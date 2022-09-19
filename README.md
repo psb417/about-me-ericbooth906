@@ -1,2 +1,2 @@
-Eric Booth
+
 Eric Booth
