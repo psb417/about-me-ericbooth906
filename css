@@ -1,0 +1,78 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#f3dec8;
+    color:darkcyan}
+
+h1, h2, h3,h4,h5,h6
+{font-family:Oswald;color:#368096;}
+h1 {font-size:44pt;text-align: center;color:rgb(46, 27, 13) }
+h2 {font-size:36pt;text-align: left;color:saddlebrown;font-style: italic;font;text-decoration: underline;}
+h3 {font-size:34pt;text-align: center;}
+h4 {font-size:18pt;text-align: left;}
+
+header {text-align: center;}
+
+#p2 {font-family: Oswald; 
+    text-align:left;
+    font-size: medium;
+    font-weight: normal;
+    color:sienna}
+
+#hero,footer
+{text-align: center;
+   font-family:Oswald;
+    background-color: #dfba96;
+    border: 3px solid #368096;
+    padding: 10px;
+    font-size: 18pt;
+    font-variant: small-caps;
+    color:black;}
+
+    #newbox 
+    {text-align: left;
+       font-family:Oswald;
+        background-color: #dfba96;
+        border: 3px solid #368096;
+        padding: 10px;
+        font-size: 18pt;
+        font-variant: small-caps;
+        color:black;}
+
+    #hero,img {width: 300px;}
+
+    #bio {text-align:left;font-family: Oswald;
+    font-size:14pt;
+    font-weight:normal;
+  
+        #li{text-align:center;font-family: Oswald;
+    font-size:14pt;font-weight:normal}
+
+    #gallery {border:14px;color:darkcyan;}
+  
+    #gallery img{max-width: 100%;}
+    
+    #gallery figure {text-align:center; font-variant: small-caps; width: 300px;}
+        
+
+    #lit
+    {border:5px solid darkcyan;
+        padding: 50px;
+        margin: 10px;}
+    {text-align: left;}
+    line-height: 1.5; padding: 4rem;
+    font-size: 18pt;color:black;font-weight:normal; 
+    border: 14px;text-align: left;text-align:left;
+    font-family: Oswald; font-size:14pt;
+    margin: 0 auto}
+   
+
+    #lit div p {padding: .5rem 0; clear:both}
+    
+    #lit div  p::first-line{color:darkcyan;font-size: 1.5em;
+        font-weight:bold;font-style: italic;}
+    
+    
+    
+   
+    
+
