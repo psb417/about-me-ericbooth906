@@ -4,12 +4,13 @@ body{
     color:darkcyan}
 
 h1, h2, h3,h4,h5,h6
-{font-family:Oswald;color:#368096;}
-h1 {font-size:44pt;text-align: center;color:rgb(46, 27, 13) }
-h2 {font-size:36pt;text-align: left;color:saddlebrown;font-style: italic;font;text-decoration: underline;}
-h3 {font-size:34pt;text-align: center;}
+{font-family:Oswald;color:darkcyan;}
+h1 {font-size:44pt;text-align: center;color:rgb(46, 27, 13)}
+h2 {font-size:36pt;text-align: center; margin: 1em;  color:saddlebrown;font-style: italic;text-decoration: underline;}
+h3 {font-size:24pt;text-align: center;}
 h4 {font-size:18pt;text-align: left;}
 
+h2 {text-align:center margin 1rem}
 header {text-align: center;}
 
 #p2 {font-family: Oswald; 
@@ -18,9 +19,11 @@ header {text-align: center;}
     font-weight: normal;
     color:sienna}
 
-#hero,footer
-{text-align: center;
-   font-family:Oswald;
+    /*Hero and Footer Section*/
+
+#hero,footer {
+    align-items:center;
+    font-family:Oswald;
     background-color: #dfba96;
     border: 3px solid #368096;
     padding: 10px;
@@ -28,51 +31,122 @@ header {text-align: center;}
     font-variant: small-caps;
     color:black;}
 
-    #newbox 
-    {text-align: left;
-       font-family:Oswald;
-        background-color: #dfba96;
+    /*Hobbie Section*/
+    #hobbies
+    {text-align: left font-family Oswald; 
+    display: flex; flex-direction: column; align-items: left; margin: 1rem;}
+
+    #newbox {
+        background-color:cornsilk;
         border: 3px solid #368096;
-        padding: 10px;
+        padding: 50px;
+      
+        margin: 10px;
+        text-align: center;
+        font-family:Oswald;
+        background-color: #dfba96;
+        padding: 5px;
         font-size: 18pt;
         font-variant: small-caps;
-        color:black;}
+        color:black;
+        align-items: center;
+        }
 
     #hero,img {width: 300px;}
 
-    #bio {text-align:left;font-family: Oswald;
-    font-size:14pt;
-    font-weight:normal;
-  
-        #li{text-align:center;font-family: Oswald;
-    font-size:14pt;font-weight:normal}
+    /*Bio Section*/
 
-    #gallery {border:14px;color:darkcyan;}
+    #bio {text-align:center;font-family: Oswald;
+    font-size:14pt; margin: 1em;
+    font-weight:normal display flex; 
+    flex-direction: column; 
+    align-items: center;}
+  
+    #li{text-align:center; 
+        font-family:Oswald;
+        font-weight:normal}
+
+/*Gallery Section*/
+
+#gallery{
+    border: 2px solid black;
+    margin-bottom:2rem}
+
+    #figure {      
+        padding: 10px;
+        font-variant: small-caps; 
+        width: 300px;
+        align-items: center; display:grid;
+        grid-template-columns: 2fr 1fr;}
   
     #gallery img{max-width: 100%;}
     
-    #gallery figure {text-align:center; font-variant: small-caps; width: 300px;}
+    #gallery figure{
+        text-align:center}
+
+    #figure{
+        text-align:center; 
+        font-variant: small-caps; 
+        width: 300px;
+        align-items: center; display:grid;
+        grid-template-columns: 2fr 1fr;}
         
+        #figcaption {display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-left: 1rem;}
 
-    #lit
-    {border:5px solid darkcyan;
+
+/*Article Section */  
+
+    #lit{
+        background-color:cornsilk;
+        border: 10px solid saddlebrown;
         padding: 50px;
-        margin: 10px;}
-    {text-align: left;}
-    line-height: 1.5; padding: 4rem;
-    font-size: 18pt;color:black;font-weight:normal; 
-    border: 14px;text-align: left;text-align:left;
-    font-family: Oswald; font-size:14pt;
-    margin: 0 auto}
+        max-width: 40rem;
+        margin: 10px;
+        text-align: center;
+        line-height: 1.5;
+        color:black;
+        font-weight:normal; 
+        text-indent: -12px
+        align-items left
+        font-family Oswald; 
+        font-size:14pt;
+        margin-bottom:2rem}
    
 
-    #lit div p {padding: .5rem 0; clear:both}
+    #lit div p {
+        color:black:2rem;
+        max-width: 40rem;
+        margin: 0 auto;
+        clear:both}
     
-    #lit div  p::first-line{color:darkcyan;font-size: 1.5em;
-        font-weight:bold;font-style: italic;}
-    
-    
-    
-   
-    
+        /*Dropcaps*/
+
+    #lit div p::first-letter {
+        color:darkcyan;
+        float-left;
+        font-size: 2em;
+        font-weight:400
+        line-height:1.25;
+    }
+        
+    @media screen and (min-width:60em) 
+          
+    figure {
+        text-align:center; 
+        font-variant small-caps
+        width 300px
+    }
+        align-items: center; display:grid;
+        grid-template-columns: 2fr 1fr;}
+     
+    #gallerycaption {
+        display:flex
+        justify-contentcenter
+        align-items center;
+        font-size 2rem;
+        margin-left 1rem;}
 
