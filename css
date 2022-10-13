@@ -54,13 +54,12 @@ header {text-align: center;}
     font-family:Oswald;
     font:bolder;
     background-color:cadetblue;; 
-    margin: .1em}
+    border:slategrey 5px solid;
+    margin:.1em}
 
 #hobbies
-    h2 {
-        border:#f3dec8 (1, 1, 1,1);
-        margin: .1em;
-      }
+    h2 {margin:.1em}
+    
 
     #hobbies ul {
     text-align: center;
@@ -99,7 +98,7 @@ header {text-align: center;}
 
     #bio {
         background-color:blanchedalmond;
-        border:slategrey 3px solid;
+        border:slategrey 5px solid;
         margin-top: 10px;
         margin-right: 10px;
         margin-left: 10px;
