@@ -5,8 +5,8 @@ body{
 
 h1, h2, h3,h4,h5,h6
 {font-family:Oswald;color:darkcyan;}
-h1 {font-size:44pt;text-align: center;color:rgb(46, 27, 13) }
-h2 {font-size:36pt;text-align: center; margin: .1rem;  color:saddlebrown;font-style: italic;padding: 50px;}
+h1 {font-size:44pt;text-align: center darkcyan;}
+h2 {font-size:36pt;text-align: center; margin: .1em;  color:saddlebrown;font-style: italic;padding: 50px;}
 h3 {font-size:24pt;text-align: center;}
 h4 {font-size:18pt;text-align: left;}
 
@@ -15,57 +15,101 @@ header {text-align: center;}
 
 #p2 {font-family: Oswald; 
     text-align:left;
-    font-size: medium;
+    font-size: 12pt;
     font-weight: normal;
     color:sienna}
  
     /*Hero and Footer Section*/
 
-#hero,footer {
-    align-items:center;
-    font-family:Oswald;
-    background-color: #dfba96;
-    border: 3px solid #368096;
+/*Hero Section*/
+    #hero
+    {flex: auto;
+    font-family: Oswald;
+    background-color:blanchedalmond;
+    border:5px solid #368096;
+    border-style:groove;
+    text-align: center;
     padding: 10px;
     font-size: 18pt;
     font-variant: small-caps;
-    color:black;
-   }
+    color: black;}
+   
+  /*Footer Section*/
+    #footer 
+    {text-align: center;
+    font-family:Oswald;
+    background-color: saddlebrown;
+    border: 1.5px solid #368096;
+    padding: 10px;
+    font-size: 12pt;
+    font-variant: small-caps;
+    color: bisque;}
+   
 
-    /*Hobbies Section*/
+/*Hobbies Section*/
     #hobbies
     {display:flex;
     flex-direction: column;
-    font-family:Oswald; 
-    align-content: center;}
+    align-items: center;
+    font-family:Oswald;
+    font:bolder;
+    background-color:cadetblue;; 
+    margin: .1em}
 
-    #hobbies ul {list-style-type: square black}
+#hobbies
+    h2 {
+        border:#f3dec8 (1, 1, 1,1);
+        margin: .1em;
+      }
 
+    #hobbies ul {
+    text-align: center;
+    color:blanchedalmond;
+    font:bolder;}
+
+/*New Box Section*/
     #newbox {
-        background-color:cornsilk;
-        border: 3px solid #368096;
-        border-radius: 5px;
-        padding: 20px; 
-        margin: 10px;
+        background-color:cadetblue;
+        font-family:Oswald;
+        color:darkslategrey; 
+        font:bolder;
+        padding: 10px 1/4; 
+        margin: .1em;
         text-align: center;
-        background-color: #dfba96;
         font-size: 18pt;
-        font-variant: small-caps;
-        color:black;
+        max-height: fit-content;
+        color:aquamarine;
         align-items: center;
         }
 
-    #hero,img {width: 300px;}
+        #mushroom {
+            background-color:cornsilk;
+            border:slategrey 3px solid;
+            padding: 10px 1/4; 
+            margin: 10px;
+            text-align: center;
+            font-size: 18pt;
+            font-variant: small-caps;
+            color:black;
+            align-items: center;
+            }
+    #hero img {width: 300px;}
 
     /*Bio Section*/
 
     #bio {
-    text-align:center;
-    font-family: Oswald;
-    font-size:14pt; margin: 1em;
-    font-weight:normal display flex; 
-    flex-direction: column; 
-    align-items: center;}
+        background-color:blanchedalmond;
+        border:slategrey 3px solid;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        text-align:center;
+        font-family: Oswald;
+        font-size:14pt;
+        font-weight:normal display flex; 
+        flex-direction: column; 
+        align-items: center;}
   
     #li{text-align:center; 
         font-family:Oswald;
@@ -73,16 +117,25 @@ header {text-align: center;}
 
 /*Gallery Section*/
 
-#gallery{
-    border: 2px solid black;
+    #gallery{
+    border: 5px solid darkcyan;
+    align-items: center;
     margin-bottom:2rem}
 
-    #figure {      
+    #gallery img {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    #gallery figure { 
+        display:grid;
+        grid-template-columns: 2fr 1fr;     
         padding: 10px;
         font-variant: small-caps; 
-        width: 300px;
-        align-items: center; display:grid;
-        grid-template-columns: 2fr 1fr;}
+        
+        align-items: center; 
+        display:grid;
+        grid-template-columns: 2fr 2fr;}
   
     #gallery img{max-width: 100%;}
     
@@ -96,55 +149,74 @@ header {text-align: center;}
         align-items: center; display:grid;
         grid-template-columns: 2fr 1fr;}
         
-        #figcaption {display:flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            margin-left: 1rem;}
+    #figcaption {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;}
 
 
 /*Article Section */  
 
     #lit{
         background-color:cornsilk;
-        border: 10px solid saddlebrown;
+        border: 5px solid saddlebrown;
         padding: 50px;
-        max-width: 400rem;
-        margin: 10px;
         text-align: left;
         line-height: 1.5;
         font-weight:normal; 
-        align-items:stretch left;
         font-family: Oswald; 
         font-size:14pt;
-        margin-bottom:2rem
+        margin-bottom:2rem;
         }
       
-        /*Dropcaps*/
+ /*Dropcaps*/
 
-    #lit div
-        p  {text-indent:50px}
-    
-
-        #lit div p::first-line {
-        text-rendering: darkslategrey 1.5em;
+    #lit div p:first-child:first-letter {
+        padding: 2rem 0;
+        clear: both;
+        max-width: 40rem;
+        margin: 0 auto;
+        float:.5rem inline-start;
+        color: black;
+        background-color: darkseagreen;
+        font-size: 1.5rem;
+        padding: .5rem;
+        border: 1px outset darkgrey;
         font-weight: bolder;
-        font-style: italic;
-        text-shadow: 2px 2px 2px 2px coral;
+        box-shadow: .5px .5px .5px .5px coral;
     }
-       /*tablet size*/ 
-    @media screen and (min-width:60em) {
-       figure { 
-        display: grid;
-        grid-template-columns:2fr 1fr}
+           
     
-        figcaption {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            margin-left: 1rem;}
-        }
-    #lit div{
-    max-width:100%;
-    columns: 20em;}
+        
+/*tablet size*/ 
+@media screen and (min-width:60em){
+    figure {
+    display:grid;
+    grid-template-columns: 1fr 2fr;}
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;}}
+
+    figure image {width: 100%;}
+
+   /*larger screen size*/ 
+        @media screen and (min-width:100em) {
+        #gallery {
+        display:grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr}
+    
+        hr{display:none;}
+
+        #gallery h2 {
+        grid-column: 1/-1;}
+
+        figure {display: block;}
+
+        #lit div {
+        max-width: 100%;
+        columns: 20rem;}}
