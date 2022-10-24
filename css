@@ -34,6 +34,20 @@ header {text-align: center;}
     font-variant: small-caps;
     color: black;}
    
+/*Video Section*/
+#video
+    {flex: auto;
+    align-items: center chocolate;
+    font-family: Oswald;
+    background-color:blanchedalmond;
+    border:5px solid #368096;
+    border-style:double;
+    text-align: center;
+    padding: 10px;
+    font-size: 18pt;
+    font-variant: small-caps;
+    }
+
   /*Footer Section*/
     #footer 
     {text-align: center;
