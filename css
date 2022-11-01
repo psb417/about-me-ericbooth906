@@ -67,7 +67,7 @@ header {text-align: center;}
     align-items: center;
     font-family:Oswald;
     font:bolder;
-    background-color:cadetblue;; 
+    background-color:cadetblue;
     border:slategrey 5px solid;
     margin:.1em}
 
@@ -212,8 +212,57 @@ header {text-align: center;}
         box-shadow: .5px .5px .5px .5px coral;
     }
            
+    /* Contact Form*/
+        #formElements{
+            display:grid;
+            row-gap: .75em;
+            font-variant: small-caps;
+        }
     
-        
+        #contact{
+            padding: 1.5rem;
+            max-width:500px;
+            margin: 1.5rem auto;
+            font-variant: small-caps;
+        }
+
+        fieldset{
+            border: 2px solid saddlebrown;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            border-radius: 2rem;
+            font-variant: small-caps;
+        }
+
+    legend{
+        background-color: saddlebrown;
+        color:bisque;
+        padding: 0.5rem;
+        font-variant: small-caps;
+    }
+
+    #contact ul{
+        list-style: none;
+        padding:0px;
+    }
+      
+    #contact li{
+        margin: 1rem;
+    }
+
+    #contact button {
+        background-color: saddlebrown;
+        padding: .5em;
+        color:bisque;
+        border: .25em solid darkslategray;
+        max-width: 500px;
+       font-variant: small-caps;
+       font-size: larger;
+       
+    }
+
+
+
 /*tablet size*/ 
 @media screen and (min-width:60em){
     figure {
@@ -243,4 +292,6 @@ header {text-align: center;}
 
         #lit div {
         max-width: 100%;
-        columns: 20rem;}}
+        columns: 20rem;}
+        }
+
